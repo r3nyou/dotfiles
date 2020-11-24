@@ -170,7 +170,7 @@
         "commands": ["workbench.view.extensions"]
       },
       {
-        "before": ["<leader>","b", "b"],
+        "before": ["<leader>","f", "s"],
         "commands": ["breadcrumbs.toggleToOn"]
       }
     ],
