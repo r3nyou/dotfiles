@@ -53,6 +53,7 @@ noremap ,qr :action FindUsages<CR>
 noremap ,tt :action SelectIn<CR>
 noremap ,tb :action HideAllWindows<CR>
 noremap ,fs :action FileStructurePopup<CR>
+noremap ,re :action Refactorings.QuickListPopupAction<CR>
 noremap ,x1 :action UnsplitAll<CR>
 noremap ,x2 :action SplitHorizontally<CR>
 noremap ,x3 :action SplitVertically<CR>
