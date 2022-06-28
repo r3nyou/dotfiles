@@ -35,8 +35,8 @@ noremap ,qq :action FindInPath<CR>
 noremap ,ss :action Find<CR>
 noremap ,kk :action GotoFile<CR>
 noremap ,ii :action GotoSymbol<CR>
-noremap ,gd :action GotoImplementation<CR>
-noremap ,cc :action CommentByLineComment<CR>
+noremap ,tp :action GotoTypeDeclaration<CR>
+noremap ,ti :action GotoImplementation<CR>
 noremap ,qr :action FindUsages<CR>
 noremap ,tt :action SelectIn<CR>
 noremap ,qt :action HideAllWindows<CR>
@@ -45,7 +45,9 @@ noremap ,re :action Refactorings.QuickListPopupAction<CR>
 noremap ,te :action RerunTests<CR>
 noremap ,x1 :action UnsplitAll<CR>
 noremap ,x3 :action SplitVertically<CR>
+noremap ,cc :action CommentByLineComment<CR>
 noremap ,fp :action CopyPaths<CR>
+" noremap ,gd :action GotoImplementation<CR>
 " noremap ,rf :action ReformatCode<CR>
 " noremap ,xm :action SearchEverywhere<CR>
 " noremap ,xs :action SaveAll<CR>
