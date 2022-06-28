@@ -1,16 +1,16 @@
-let mapleader = ","   " leader is comma
-let localleader = "," " leader is comma
+let mapleader = ","     " leader is comma
+let localleader = ","   " leader is comma
 
-set tabstop=4       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
-set shiftwidth=4    " spaces in newline start
-set expandtab       " tabs are spaces
+set tabstop=4           " number of visual spaces per TAB
+set softtabstop=4       " number of spaces in tab when editing
+set shiftwidth=4        " spaces in newline start
+set expandtab           " tabs are spaces
 set number              " show line numbers
 set rnu                 " show relative line numbers
 set showcmd             " show command in bottom bar
-"set cursorline          " highlight current line
+"set cursorline           highlight current line
 set surround            " use surround shortcuts
-set commentary "vim-commentary
+set commentary          "vim-commentary
 filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching [{()}]
@@ -28,52 +28,32 @@ set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 set clipboard=unnamedplus  "X clipboard as unnamed
 
-"press kj to exit insert mode
-imap qq <Esc>
-vmap qq <Esc>
-
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 
-noremap ,xm :action SearchEverywhere<CR>
+noremap ,rr :action RecentFiles<CR>
+noremap ,qq :action FindInPath<CR>
+noremap ,ss :action Find<CR>
+noremap ,kk :action GotoFile<CR>
+noremap ,ii :action GotoSymbol<CR>
+noremap ,gd :action GotoImplementation<CR>
 noremap ,cc :action CommentByLineComment<CR>
-noremap ,xs :action SaveAll<CR>
+noremap ,qr :action FindUsages<CR>
+noremap ,tt :action SelectIn<CR>
+noremap ,qt :action HideAllWindows<CR>
+noremap ,fs :action FileStructurePopup<CR>
+noremap ,re :action Refactorings.QuickListPopupAction<CR>
+noremap ,te :action RerunTests<CR>
+noremap ,x1 :action UnsplitAll<CR>
+noremap ,x3 :action SplitVertically<CR>
+noremap ,fp :action CopyPaths<CR>
+" noremap ,rf :action ReformatCode<CR>
+" noremap ,xm :action SearchEverywhere<CR>
+" noremap ,xs :action SaveAll<CR>
 " noremap ,aa :action $Copy<CR>
 " noremap ,zz :action $Paste<CR>
 " noremap ,yy :action PasteMultiple<CR>
-noremap ,qq :action FindInPath<CR>
-noremap ,ss :action Find<CR>
-noremap ,fp :action CopyPaths<CR>
-noremap ,xk :action CloseEditor<CR>
-noremap ,rr :action RecentFiles<CR>
-noremap ,kk :action GotoFile<CR>
-noremap ,ii :action GotoSymbol<CR>
-noremap  gd :action GotoImplementation<CR>
-noremap ,te :action ActivateTerminalToolWindow<CR>
-noremap ,qr :action FindUsages<CR>
-noremap ,tt :action SelectIn<CR>
-noremap ,tb :action HideAllWindows<CR>
-noremap ,fs :action FileStructurePopup<CR>
-noremap ,re :action Refactorings.QuickListPopupAction<CR>
-noremap ,x1 :action UnsplitAll<CR>
-noremap ,x2 :action SplitHorizontally<CR>
-noremap ,x3 :action SplitVertically<CR>
-" noremap ,rf :action ReformatCode<CR>
+" noremap ,xk :action CloseEditor<CR>
+" noremap ,x2 :action SplitHorizontally<CR>
 
 " External tool
 " noremap ,cs :action Tool_External Tools_PHP CS Fixer<CR>
-
-" ideavim bug, they don't support numberic character in hotkey
-" should be ,x1
-noremap ,xu :action VimWindowOnly<CR>
-" should be ,x3
-noremap ,xh :action VimWindowSplitHorizontal<CR>
-" should be ,x2
-noremap ,xv :action VimWindowSplitVertical<CR>
-" but ,x0 works!
-noremap ,x0 :action VimWindowClose<CR>
-" move window
-noremap ,wh :action VimWindowLeft<CR>
-noremap ,wl :action VimWindowRight<CR>
-noremap ,wj :action VimWindowDown<CR>
-noremap ,wk :action VimWindowUp<CR>
-" inoremap <C-[> <Esc>
