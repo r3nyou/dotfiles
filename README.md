@@ -1,9 +1,11 @@
 # dotfiles
-Configuration files I used.
+Configuration files, and IDE setting I used.
 
 ## Jetbrains
-- [IdeaVim action list](https://gist.github.com/zchee/9c78f91cc5ad771c1f5d)
+### PhpStorm
+- use [setting repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) to share IDE settings, here is my [repository](https://github.com/r3nyou/phpstorm-setting)
+- use `:actionlist` to show all action can be set
 
 ## Visual Studio Code Setup
-* settings.json - modifies the default settings offered by VS Code or its extensions
-* keybindings.json - alter the default keybindings
+- settings.json - modifies the default settings offered by VS Code or its extensions
+- keybindings.json - alter the default keybindings
