@@ -42,7 +42,7 @@ noremap ,tt :action SelectIn<CR>
 noremap ,qt :action HideAllWindows<CR>
 noremap ,fs :action FileStructurePopup<CR>
 noremap ,re :action Refactorings.QuickListPopupAction<CR>
-noremap ,te :action RerunTests<CR>
+" noremap ,te :action RerunTests<CR>
 noremap ,x1 :action UnsplitAll<CR>
 noremap ,x3 :action SplitVertically<CR>
 noremap ,cc :action CommentByLineComment<CR>
