@@ -35,7 +35,7 @@ noremap ,qq :action FindInPath<CR>
 noremap ,ss :action Find<CR>
 noremap ,kk :action GotoFile<CR>
 noremap ,ii :action GotoSymbol<CR>
-noremap ,tp :action GotoTypeDeclaration<CR>
+noremap ,td :action GotoTypeDeclaration<CR>
 noremap ,ti :action GotoImplementation<CR>
 noremap ,qr :action FindUsages<CR>
 noremap ,tt :action SelectIn<CR>
