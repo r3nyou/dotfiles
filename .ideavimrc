@@ -1,6 +1,8 @@
 let mapleader = ","     " leader is comma
 let localleader = ","   " leader is comma
 
+set hidden
+
 set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in tab when editing
 set shiftwidth=4        " spaces in newline start
@@ -9,7 +11,6 @@ set number              " show line numbers
 set rnu                 " show relative line numbers
 set showcmd             " show command in bottom bar
 "set cursorline           highlight current line
-set surround            " use surround shortcuts
 set commentary          "vim-commentary
 filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
@@ -22,7 +23,14 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set ignorecase          " do case insensitive matching
 set smartcase           " do smart case matching
-set hidden
+
+""" Plugins  --------------------------------
+set surround            " use surround shortcuts
+set argtextobj
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
 
 set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
@@ -30,26 +38,27 @@ set clipboard=unnamedplus  "X clipboard as unnamed
 
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 
-noremap ,rr :action RecentFiles<CR>
-noremap ,qq :action FindInPath<CR>
-noremap ,ss :action Find<CR>
-noremap ,kk :action GotoFile<CR>
-noremap ,ii :action GotoSymbol<CR>
-noremap ,gd :action GotoTypeDeclaration<CR>
-noremap ,ti :action GotoImplementation<CR>
-noremap ,qr :action FindUsages<CR>
-noremap ,tt :action SelectIn<CR>
-noremap ,qt :action HideAllWindows<CR>
-noremap ,fs :action FileStructurePopup<CR>
-noremap ,re :action Refactorings.QuickListPopupAction<CR>
-noremap ,x1 :action UnsplitAll<CR>
-noremap ,x3 :action SplitVertically<CR>
-noremap ,cc :action CommentByLineComment<CR>
-noremap ,fp :action CopyPaths<CR>
-noremap ,fo :action ReformatCode<CR>
+""" Mappings --------------------------------
+noremap <leader>rr :action RecentFiles<CR>
+noremap <leader>qq :action FindInPath<CR>
+noremap <leader>ss :action Find<CR>
+noremap <leader>kk :action GotoFile<CR>
+noremap <leader>ii :action GotoSymbol<CR>
+noremap <leader>gd :action GotoTypeDeclaration<CR>
+noremap <leader>ti :action GotoImplementation<CR>
+noremap <leader>qr :action FindUsages<CR>
+noremap <leader>tt :action SelectIn<CR>
+noremap <leader>qt :action HideAllWindows<CR>
+noremap <leader>fs :action FileStructurePopup<CR>
+noremap <leader>re :action Refactorings.QuickListPopupAction<CR>
+noremap <leader>x1 :action UnsplitAll<CR>
+noremap <leader>x3 :action SplitVertically<CR>
+noremap <leader>cc :action CommentByLineComment<CR>
+noremap <leader>fp :action CopyPaths<CR>
+noremap <leader>rf :action ReformatCode<CR>
+noremap <leader>sw :action SurroundWith<CR>
+noremap <S-Space> :action GotoNextError<CR>
 " noremap ,te :action RerunTests<CR>
-" noremap ,gd :action GotoImplementation<CR>
-" noremap ,rf :action ReformatCode<CR>
 " noremap ,xm :action SearchEverywhere<CR>
 " noremap ,xs :action SaveAll<CR>
 " noremap ,aa :action $Copy<CR>
@@ -58,5 +67,6 @@ noremap ,fo :action ReformatCode<CR>
 " noremap ,xk :action CloseEditor<CR>
 " noremap ,x2 :action SplitHorizontally<CR>
 
-" External tool
+
+""" External tool --------------------------------
 " noremap ,cs :action Tool_External Tools_PHP CS Fixer<CR>
