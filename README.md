@@ -1,6 +1,11 @@
 # dotfiles
 Configuration files, and IDE setting I used.
 
+## oh-my-zsh
+install command
+1. [eza](https://github.com/eza-community/eza)
+2. [fzf](https://github.com/junegunn/fzf#installation)
+
 ## Jetbrains
 ### PhpStorm
 - use [setting repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) to share IDE settings, here is my [repository](https://github.com/r3nyou/phpstorm-setting)
