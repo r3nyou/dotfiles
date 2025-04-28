@@ -8,7 +8,8 @@ install command
 
 ## Jetbrains
 ### PhpStorm
-- use [setting repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) to share IDE settings, here is my [repository](https://github.com/r3nyou/phpstorm-setting)
+- ~~use [setting repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) to share IDE settings, here is my [repository](https://github.com/r3nyou/phpstorm-setting)~~
+  - Use PhpStorm backup and sync tool now
 - use `:actionlist` to show all action can be set
 
 ## Visual Studio Code Setup
