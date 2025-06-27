@@ -1,0 +1,23 @@
+{
+    // view
+    "editor.fontSize": 13,
+    "editor.cursorBlinking": "solid",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 25,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.colorTheme": "Darcula",
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+
+    // setting
+    "search.exclude": {
+        "**/.git": true,
+        "**/*.bundle.js": true,
+        "**/bin-packages": true,
+        "**/frontend-dist": true,
+        "**/npm-packages-offline-cache": true
+      },
+}
