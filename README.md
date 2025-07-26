@@ -15,3 +15,6 @@ install command
 ## Visual Studio Code Setup
 - settings.json - modifies the default settings offered by VS Code or its extensions
 - keybindings.json - alter the default keybindings
+
+## TODO
+cursor 其他的 profile
