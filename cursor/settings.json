@@ -4,7 +4,7 @@
     "editor.cursorBlinking": "solid",
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.lineHeight": 25,
+    "editor.lineHeight": 27,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -19,5 +19,27 @@
         "**/bin-packages": true,
         "**/frontend-dist": true,
         "**/npm-packages-offline-cache": true
-      },
+    },
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "single",
+    "cursor.cpp.disabledLanguages": [
+        "markdown",
+        "plaintext"
+    ],
+    "cursor.composer.shouldAllowCustomModes": true,
+    
+    // for markdown workspace
+    "[markdown]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "workbench.editorAssociations": {
+        "*.md": "default"
+    },
+    "editor.cursorStyle": "block",
+    "cursor.general.disableHttp2": true,
+    "cursor.composer.shouldChimeAfterChatFinishes": true
 }
