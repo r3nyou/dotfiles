@@ -17,7 +17,7 @@
         "command": "workbench.action.navigateForward"
     },
     {
-        "key": ", r r",
+        "key": ", k k",
         "command": "workbench.action.quickOpen",
         "when": "neovim.mode == 'normal' && editorTextFocus"
     },
@@ -107,5 +107,41 @@
         "key": "cmd+f12",
         "command": "-editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+cmd+v",
+        "command": "-markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "cmd+m",
+        "command": "markdown.showPreview"
+    },
+    {
+        "key": "cmd+3",
+        "command": "composer.showComposerHistory"
+    },
+    {
+        "key": "alt+cmd+'",
+        "command": "-composer.showComposerHistory"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
     }
 ]
