@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+git diff --staged --quiet && echo "No staged changes" && exit 1
+
+# 生成並提交
+CHANGES=$(git diff --staged --stat && echo "---" && git diff --staged | head -1000)
+MSG=$(echo "$CHANGES" | claude -p "Create Conventional Commits message:
+- feat: new feature
+- fix: bug fix
+- docs: documentation
+- style: formatting
+- refactor: code restructuring
+- test: tests
+- chore: maintenance
+Format: type(scope): description (max 72 chars)
+Output ONLY the message.")
+
+git commit -m "$MSG"
