@@ -5,6 +5,8 @@ Configuration files, and IDE setting I used.
 install command
 1. [eza](https://github.com/eza-community/eza)
 2. [fzf](https://github.com/junegunn/fzf#installation)
+3. ripgrep
+4. bat
 
 ## Jetbrains
 ### PhpStorm
