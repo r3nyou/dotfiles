@@ -143,5 +143,15 @@
     {
         "key": "cmd+3",
         "command": "-workbench.action.focusThirdEditorGroup"
-    }
+    },
+    {
+        "key": ", c w",
+        "command": "copy-with-context.copyWithContext",
+        "when": "neovim.mode == 'visual' && editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": ", c w",
+        "command": "copy-with-context.copyWithContext",
+        "when": "neovim.mode == 'normal' && editorTextFocus && editorHasSelection"
+    } 
 ]
