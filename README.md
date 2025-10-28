@@ -8,6 +8,10 @@ install command
 3. ripgrep
 4. bat
 
+## Cursor
+1. [copy-with-context](https://github.com/r3nyou/copy-with-context) 可直接下載 
+[打包檔](https://drive.google.com/file/d/1oZJflsB6NsK9hHf3OmgylCwLeBZpZ8Wb/view?usp=sharing)
+
 ## Jetbrains
 ### PhpStorm
 - ~~use [setting repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) to share IDE settings, here is my [repository](https://github.com/r3nyou/phpstorm-setting)~~
