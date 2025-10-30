@@ -1,12 +1,10 @@
-#!/bin/bash
-
 set -e
 
 git diff --staged --quiet && echo "No staged changes" && exit 1
 
 # 生成並提交
 CHANGES=$(git diff --staged --stat && echo "---" && git diff --staged | head -1000)
-MSG=$(echo "$CHANGES" | claude -p "Create Conventional Commits message:
+MSG=$(echo "$CHANGES" | gemini -p "Create Conventional Commits message:
 - feat: new feature
 - fix: bug fix
 - docs: documentation
