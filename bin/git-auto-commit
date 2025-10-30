@@ -14,7 +14,7 @@ MSG=$(echo "$CHANGES" | claude -p "Create Conventional Commits message:
 - refactor: code restructuring
 - test: tests
 - chore: maintenance
-Format: type(scope): description (max 72 chars)
+Format: type(scope):[A2] description (max 72 chars)
 Output ONLY the message.")
 
 git commit -m "$MSG"
