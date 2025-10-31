@@ -1,14 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "cmd+1",
-        "command": "-workbench.action.focusFirstEditorGroup"
-    },
-    {
-        "key": "cmd+1",
-        "command": "workbench.action.togglePanel"
-    },
-    {
         "key": "cmd+[",
         "command": "workbench.action.navigateBack"
     },
@@ -17,50 +9,17 @@
         "command": "workbench.action.navigateForward"
     },
     {
-        "key": ", k k",
-        "command": "workbench.action.quickOpen",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": ", s s",
-        "command": "actions.find",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": ", q q", 
-        "command": "workbench.action.findInFiles",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": ", x 1",
-        "command": "workbench.action.editorLayoutSingle",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": ", q t",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": ", t t",
-        "command": "workbench.view.explorer",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": ", f s",
-        "command": "workbench.action.quickOpen",
-        "args": "@",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
-        "key": ", i i",
-        "command": "workbench.action.showAllSymbols",
-        "when": "neovim.mode == 'normal' && editorTextFocus"
-    },
-    {
         "key": "escape",
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "!editorTextFocus && !terminalFocus"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.togglePanel"
     },
     {
         "key": "cmd+2",
@@ -69,89 +28,5 @@
     {
         "key": "cmd+2",
         "command": "aichat.newchataction"
-    },
-    {
-        "key": "cmd+l",
-        "command": "-aichat.newchataction"
-    },
-    {
-        "key": "cmd+2",
-        "command": "composer.sendToAgent",
-        "when": "editorHasPromptBar && editorPromptBarFocused"
-    },
-    {
-        "key": "cmd+l",
-        "command": "-composer.sendToAgent",
-        "when": "editorHasPromptBar && editorPromptBarFocused"
-    },
-    {
-        "key": "cmd+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "cmd+j",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
-    },
-    {
-        "key": "f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
-    },
-    {
-        "key": "cmd+j",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
-    },
-    {
-        "key": "cmd+f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
-    },
-    {
-        "key": "shift+cmd+m",
-        "command": "markdown.showPreviewToSide",
-        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
-    },
-    {
-        "key": "cmd+k v",
-        "command": "-markdown.showPreviewToSide",
-        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
-    },
-    {
-        "key": "shift+cmd+v",
-        "command": "-markdown.showPreview",
-        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
-    },
-    {
-        "key": "shift+cmd+m",
-        "command": "-workbench.actions.view.problems",
-        "when": "workbench.panel.markers.view.active"
-    },
-    {
-        "key": "cmd+m",
-        "command": "markdown.showPreview"
-    },
-    {
-        "key": "cmd+3",
-        "command": "composer.showComposerHistory"
-    },
-    {
-        "key": "alt+cmd+'",
-        "command": "-composer.showComposerHistory"
-    },
-    {
-        "key": "cmd+3",
-        "command": "-workbench.action.focusThirdEditorGroup"
-    },
-    {
-        "key": ", c w",
-        "command": "copy-with-context.copyWithContext",
-        "when": "neovim.mode == 'visual' && editorTextFocus && editorHasSelection"
-    },
-    {
-        "key": ", c w",
-        "command": "copy-with-context.copyWithContext",
-        "when": "neovim.mode == 'normal' && editorTextFocus && editorHasSelection"
-    } 
+    }
 ]
