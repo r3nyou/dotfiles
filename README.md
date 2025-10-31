@@ -9,18 +9,18 @@ install command
 4. bat
 
 ## Cursor
-1. [copy-with-context](https://github.com/r3nyou/copy-with-context) 可直接下載 
-[打包檔](https://drive.google.com/file/d/1oZJflsB6NsK9hHf3OmgylCwLeBZpZ8Wb/view?usp=sharing)
+[setting](https://github.com/r3nyou/dotfiles/tree/main/cursor)
 
-## Jetbrains
-### PhpStorm
+
+## PhpStorm
 - ~~use [setting repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) to share IDE settings, here is my [repository](https://github.com/r3nyou/phpstorm-setting)~~
   - Use PhpStorm backup and sync tool now
 - use `:actionlist` to show all action can be set
 
-## Visual Studio Code Setup
-- settings.json - modifies the default settings offered by VS Code or its extensions
-- keybindings.json - alter the default keybindings
-
 ## TODO
-cursor 其他的 profile
+neovim surround
+
+## Others
+[copy-with-context](https://github.com/r3nyou/copy-with-context) 可直接下載 
+[打包檔](https://drive.google.com/file/d/1oZJflsB6NsK9hHf3OmgylCwLeBZpZ8Wb/view?usp=sharing)
+
