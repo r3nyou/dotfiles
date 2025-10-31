@@ -19,7 +19,7 @@ install command
 
 ## TODO
 - [ ] neovim surround
-- [ ] claude user&全專案 scope 的 setting / agents
+- [ ] claude user&全專案 scope 的 setting / agents（注意機密資料，可能要另外存）
 
 ## Others
 [copy-with-context](https://github.com/r3nyou/copy-with-context) 可直接下載 
