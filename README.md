@@ -18,7 +18,8 @@ install command
 - use `:actionlist` to show all action can be set
 
 ## TODO
-neovim surround
+- [ ] neovim surround
+- [ ] claude user*全專案 scope 的 setting / agents
 
 ## Others
 [copy-with-context](https://github.com/r3nyou/copy-with-context) 可直接下載 
