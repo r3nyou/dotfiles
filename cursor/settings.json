@@ -1,16 +1,12 @@
 {
-    // view
-    "editor.fontSize": 13,
     "editor.cursorBlinking": "solid",
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.lineHeight": 27,
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "workbench.colorTheme": "Darcula",
+    "editor.accessibilitySupport": "on",
+    "editor.fontSize": 13,
+    "editor.stickyScroll.enabled": false,
     "files.autoSave": "onFocusChange",
-    "editor.wordWrap": "on",
 
     // setting
     "search.exclude": {
@@ -22,6 +18,7 @@
     },
     "workbench.layoutControl.enabled": false,
     "workbench.editor.showTabs": "single",
+    "workbench.colorTheme": "Darcula",
     "cursor.cpp.disabledLanguages": [
         "markdown",
         "plaintext"
@@ -41,5 +38,14 @@
     },
     "editor.cursorStyle": "block",
     "cursor.general.disableHttp2": true,
-    "cursor.composer.shouldChimeAfterChatFinishes": true
+    "cursor.composer.shouldChimeAfterChatFinishes": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "plantuml.server": "http://localhost:8080",
+    "plantuml.commandArgs": [
+        
+
+    ],
+    "terminal.integrated.fontSize": 13
 }
