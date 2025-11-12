@@ -78,7 +78,7 @@ keymap({"n", "v"}, "<leader>qt", "<cmd>lua require('vscode').action('workbench.a
 keymap({"n", "v"}, "<leader>tt", "<cmd>lua require('vscode').action('workbench.view.explorer')<CR>")
 
 -- , f s -> 尋找符號 (Find Symbol in Editor)
-keymap({"n", "v"}, "<leader>fs", "<cmd>lua require('vscode').action(workbench.action.gotoSymbol')<CR>")
+keymap({"n", "v"}, "<leader>fs", "<cmd>lua require('vscode').action('workbench.action.gotoSymbol')<CR>")
 
 -- , i i -> 顯示所有符號 (Show All Symbols)
 keymap({"n", "v"}, "<leader>ii", "<cmd>lua require('vscode').action('workbench.action.showAllSymbols')<CR>")
