@@ -2,8 +2,8 @@
 
 ## 前置設定
 
-1. profile 開好
-2. nvim 資料夾放到 `~/.config` 底下
+1. vscode/cursor 的 profile 開好
+2. nvim 資料夾複製到 `~/.config` 底下
 3. cursor 安裝套件 neovim, project manager, [copy-with-context](https://github.com/r3nyou/copy-with-context) 可直接下載 
 [打包檔](https://drive.google.com/file/d/1oZJflsB6NsK9hHf3OmgylCwLeBZpZ8Wb/view?usp=sharing)
 4. keybinding.json, settings.json 設定好
